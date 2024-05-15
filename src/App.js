@@ -6,9 +6,10 @@ import Footer from './ui/Footer'
 const App = () => {
   return (
     <>
-    <Header/>
-    <Main/>
-    <Footer/>
+      <Header />
+      <Main />
+      <Tech />
+      <Footer />
     </>
   )
 }
