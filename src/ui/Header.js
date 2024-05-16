@@ -1,14 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='z-10 sticky top-0 bg-black text-white flex justify-between px-7 py-5 items-center'>
-      <h1 className='text-2xl'>Tailwind</h1>
-      <nav className='space-x-4'>
-        <button>About us</button>
-        <button>Contact</button>
-        :HEllo
-      </nav>
+    <div className='bg-black text-white flex justify-end '>
+      <NavLink className='px-4' to='/contact'>Contact</NavLink>
+      <NavLink to='/about'>About</NavLink>
+      
     </div>
   )
 }
