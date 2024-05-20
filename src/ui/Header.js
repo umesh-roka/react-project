@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='bg-black text-white flex justify-between p-6 '>
       <h1 className='text-2xl'>Tailwind</h1>
-      <div className='grid grid-cols-autoFit'>
+      <div className='space-x-2  '>
      <NavLink className={({isActive})=>
         isActive ? " bg-pink-300" : "bg-none"
       } to='/'>Home</NavLink>
@@ -15,6 +15,9 @@ const Header = () => {
        <NavLink className={({isActive})=>
         isActive ? " bg-pink-300" : "bg-none"
       } to='/contact'>Contact</NavLink>
+             <NavLink className={({isActive})=>
+        isActive ? " bg-pink-300" : "bg-none"
+      } to='*'>Service</NavLink>
     </div>
     </div>
   )
